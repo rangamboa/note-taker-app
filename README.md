@@ -23,7 +23,7 @@ This project was built using Express.js back-end and retrieves note data written
 
 ## Usage
 
-Use ``node .\index.js`` to launch this application. Once fully functional, it will launch a webpage that will give you the option to enter notes on a separate page, to be saved and later retrieved if desired.
+Once fully functional, it will launch a [webpage](https://rangamboa.github.io/note-taker-app/) that will give you the option to enter notes on a separate page, to be saved and later retrieved if desired. This app has also been deployed to [Heroku](https://rg-note-taker.herokuapp.com/).
 
 ## Contribution
 
