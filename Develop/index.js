@@ -21,23 +21,21 @@ app.get('/notes', (req, res) => {
 
 app.get('/api/notes', (req, res) => {
 
-  // fs.readFile('./db/db.json').then((data) => res.json(JSON.parse(data)));
   fs.readFile('./db/db.json', 'utf8', (err, data) => { if (err) console.error(err) });
 
 });
 
 app.post('/api/notes', (req, res) => {
 
-  // let newTitle = req.body.title;
-  // let newText = req.body.text;
-  let newNote = { title: req.body.title, text: req.body.text };
+  // let newNote = { title: req.body.title, text: req.body.text };
+  let newNote = req.body;
   let newString = JSON.stringify(newNote);
 
   console.log(newString);
 
     fs.writeFile('db/db.json', newString, (err) => {
     if (err) throw err;
-    // return true;
+    return newString;
   });
 });
 
