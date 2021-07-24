@@ -5,7 +5,7 @@ let newNoteBtn;
 let noteList;
 
 if (window.location.pathname === '/notes') {
-  console.log('assets');
+  console.log('\n----- currently in assets folder -----');
   noteTitle = document.querySelector('.note-title');
   noteText = document.querySelector('.note-textarea');
   saveNoteBtn = document.querySelector('.save-note');

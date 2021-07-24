@@ -41,6 +41,6 @@ app.post('/api/notes', (req, res) => {
 
 // Check and display port.
 app.listen(PORT, () => {
-  console.log('public');
+  console.log('\n----- currently in public folder -----\n');
   console.log(`----- App is listening on: http://localhost:${PORT}. -----`);
 });
