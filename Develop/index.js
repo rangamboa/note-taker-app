@@ -27,14 +27,22 @@ app.get('/api/notes', (req, res) => {
 });
 
 app.post('/api/notes', (req, res) => {
-    let data = JSON.stringify(res);
-    fs.writeFile('db/db.json', data, (err) => {
+
+  // let newTitle = req.body.title;
+  // let newText = req.body.text;
+  let newNote = { title: req.body.title, text: req.body.text };
+  let newString = JSON.stringify(newNote);
+
+  console.log(newString);
+
+    fs.writeFile('db/db.json', newString, (err) => {
     if (err) throw err;
-    return true;
+    // return true;
   });
 });
 
 // Check and display port.
 app.listen(PORT, () => {
+  console.log('public');
   console.log(`----- App is listening on: http://localhost:${PORT}. -----`);
 });

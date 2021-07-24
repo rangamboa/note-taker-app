@@ -1,6 +1,1 @@
-[
-    {
-        "title":"The quick brown fox...",
-        "text":"... jumps over the lazy dog."
-    }
-]
+{"title":"this is a title","text":"this is the text"}
